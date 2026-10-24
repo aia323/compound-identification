@@ -22,16 +22,10 @@ are actually right.
 6. **Machine learning re-ranker** (in progress): LightGBM model that combines
    several match features to pick the right compound.
 
-## Results (43 known standards)
-| Method | Correct |
-|---|---|
-| **My model** | **32 / 43** |
-| MS-DIAL built-in matching | 32 / 43 |
-| MZmine built-in matching | 29 / 43 |
-
-- My model matched MS-DIAL and got 3 more standards right than MZmine.
-- Calibrated confidence held up on new data: of the matches the model was
-  ≥ 90% confident in, **53 of 54 were correct**.
+## Status
+All core steps are built and tested. Benchmarking against MS-DIAL and MZmine and
+the machine learning re-ranker are in progress. Results will be added after
+publication.
 
 ## Tech
 Python · pandas · NumPy · scikit-learn · LightGBM · statsmodels · ms_entropy ·
@@ -40,3 +34,4 @@ Google Colab · MS-DIAL · MZmine
 ## Code
 The code is private until this work is published. It's available on request:
 aia323@lehigh.edu
+
